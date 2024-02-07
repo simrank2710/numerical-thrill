@@ -1,0 +1,214 @@
+body{
+    font: Times New Roman, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#container{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+#name{
+    flex: 50%;
+}
+
+h1 a{
+    font-size: 60px;
+    font-weight:500;
+    color: red;
+    text-decoration: none;
+}
+
+#searchbox{
+    flex: 50%;
+    background: linear-gradient(#b5fdf6, #22d7fa);
+    background: -o-linear-gradient(#b5fdf6, #22d7fa);
+    background: -moz-linear-gradient(#b5fdf6, #22d7fa);
+    background: -webkit-linear-gradient(#b5fdf6, #22d7fa);
+    min-width: 425px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    float: left;
+    width: 250px;
+    padding: 4px;
+    font-size: 18px;
+    color: black;
+    background: white url(Images/search.png) right center no-repeat;
+    border: 2px solid #0794b8;
+}
+
+.button{
+    float: right;
+    padding: 6px;
+    font-weight: bold;
+    color: aliceblue;
+    background: #056795;
+    font-size: 14px;
+    border: 2px solid aliceblue;
+}
+
+.clear{
+    clear: both;
+}
+
+#menu{
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(#C8A9FF, #BA89FF);
+    background: -webkit-linear-gradient(#C8A9FF, #BA89FF);
+    background: -moz-linear-gradient(#C8A9FF, #BA89FF);
+    background: -o-linear-gradient(#C8A9FF, #BA89FF);
+    padding: 25px;
+}
+
+#menu a{
+    padding: 0 14px;
+    height: 25px;
+    border-right: 2px solid azure;
+}
+
+#menu a:last-child{
+    border-right: none;
+}
+
+#menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: azure;
+    line-height: 27px;
+    transition: font-size 0.2s ease;
+    -webkit-transition: font-size 0.2s ease;
+    -moz-transition: font-size 0.2s ease;
+    -ms-transition: font-size 0.2s ease;
+    -o-transition: font-size 0.2s ease;
+}
+
+#menu a:hover, #menu a.active{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+/*small screens: vertical menu*/
+@media screen and (max-width: 800px){
+    #menu{
+        flex-direction: column;
+        align-content: center;
+    }
+    #menu a{
+        border-right: none;
+    }
+}
+
+#introduction{
+    background: linear-gradient(#b5fdf6, #22d7fa);
+    background: -webkit-linear-gradient(#b5fdf6, #22d7fa);
+    background: -o-linear-gradient(#b5fdf6, #22d7fa);
+    background: -moz-linear-gradient(#b5fdf6, #22d7fa);
+    padding: 30px;
+    margin: 20px 0;
+}
+
+#introduction h2{
+    font-size: 40px;
+    color: #056795;
+    font-weight: 200px;
+}
+
+#introduction p{
+    font-size: 25px;
+    color: red;
+    text-align: justify;
+}
+
+.sidebars{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebarwrapper{
+    padding: 15px;
+    flex: 50%;
+}
+
+.sidebar{
+    height: 100%;
+    width: 100%;
+    border: 5px solid #056795;
+    border-radius: 30px;
+    padding: 15px 40px;
+}
+
+.sidebar h3{
+    color: #83009E;
+    font-size: 27px;
+}
+
+.sidebar ul{
+    padding-top: 10px;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 23px;
+    color: #83009E;
+    transition: font-size 0.2s ease;
+    -webkit-transition: font-size 0.2s ease;
+    -moz-transition: font-size 0.2s ease;
+    -ms-transition: font-size 0.2s ease;
+    -o-transition: font-size 0.2s ease;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#leftside ul li{
+    padding: 8px 5px 0px 5px;
+    list-style-image: url(Images/arrow.png);
+}
+
+#rightside ul li{
+    padding: 20px 0 10px 40px;
+    background: url(Images/tick.png) no-repeat left center;
+}
+
+#rightside ul li a{
+    padding: 0 0 0 10px;
+}
+
+#footer{
+    height: 50px;
+    background: linear-gradient(#C8A9FF, #BA89FF);
+    background: -webkit-linear-gradient(#C8A9FF, #BA89FF);
+    background: -moz-linear-gradient(#C8A9FF, #BA89FF);
+    background: -o-linear-gradient(#C8A9FF, #BA89FF);
+    padding: 10px 40px;
+    margin: 20px;
+    font-size: 17px;
+    color: azure;
+
+}
